@@ -50,11 +50,11 @@ A estrutura de arquivos do projeto está organizada da seguinte maneira:
 * AOS (Animate On Scroll)
 
 ## Imagens
-![Home](image.png)
-![about](image-1.png)
-![services](image-2.png)
-![footer](image-3.png)
-![Mobile](image-4.png)
+![Home](/assets/img/image.png)
+![about](/assets/img/image-1.png)
+![services](/assets/img/image-2.png)
+![footer](/assets/img/image-3.png)
+![Mobile](/assets/img/image-4.png)
 
 ## Links
 

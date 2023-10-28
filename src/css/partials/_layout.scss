@@ -133,3 +133,152 @@
         flex-direction: column;
     }
 }
+
+.services {
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.3rem 0.8rem;
+}
+
+.services-content {
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 0.8rem;
+        max-width: 48.75rem;
+    }
+}
+
+.haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2.75rem 2.1rem 2.75rem;
+}
+
+.haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-width: 22rem;
+        transition: transform 0.25s;
+    }
+}
+
+.haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background-color: $white-normal;
+    z-index: 10;
+
+    button {
+        color: $white-normal;
+        background-color: $red-normal;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 0;
+        cursor: default;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .haircuts {
+        flex-direction: column;
+    }
+
+    .haircut img {
+        max-width: 748px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.3rem 0;
+    gap: 1.3rem;
+    color: $white-normal;
+
+    p {
+        padding-top: 2rem;
+        font-size: 0.7rem;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    gap: 8px;
+    color: $white-normal;
+}
+
+.bnt-whatsapp {
+    position: fixed;
+    right: 1.3rem;
+    bottom: 0.8rem;
+    z-index: 99;
+
+    img {
+        max-width: 4.6rem;  
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.bnt-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 7.5rem;
+    top: 8px;
+    left: -9rem;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+}
+
+.bnt-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .bnt-whatsapp {
+        img {
+            max-width: 3.3rem;
+        }
+    }
+}

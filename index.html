@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Barbearia</title>
 </head>
 <body>
     <div class="bgHome">
         <header>
             <nav class="headerContent container">
-                <div class="headerIcons">
+                <div class="headerIcons" data-aos="fade-down">
                     <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
 
                     <a href="#" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
@@ -21,21 +22,21 @@
                     <a href="#" target="_blank"><i class="fa-brands fa-x fa-2x"></i></a>
                 </div>
 
-                <div class="headerLogo">
-                    <img src="assets/img/logo.svg" alt="Logo da Barbearia">
+                <div class="headerLogo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="assets/img/logo.svg" alt="Logo da Barbearia">
                 </div>
 
-                <div>
-                    <a class="headerButton" href="#">
+                <div data-aos="fade-down">
+                    <a class="headerButton" href="https://api.whatsapp.com/send/?phone=5583900000000&text=Quero%20fazer%20um%20agendamento!&type=phone_number&app_absent=0" target="_blank">
                         Agendar Horário
                     </a>
                 </div>
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="300">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
                 <p>Horário de funcionamento: 09:00 às 19:00</p>
-                <a href="#" class="button-contact" target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=5583900000000&text=Quero%20fazer%20um%20agendamento!&type=phone_number&app_absent=0" class="button-contact" target="_blank">
                     Agendar horário
                 </a>
             </main>
@@ -44,11 +45,11 @@
     
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="assets/img/images.svg" alt="Imagem sobre a Barbearia">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni temporibus fugiat minus.</p>
 
@@ -57,10 +58,65 @@
         </div>
     </section>
 
-    
+    <section class="services">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus voluptatem, ut, impedit reiciendis quas amet consectetur expedita porro nam voluptates nisi provident officia sequi non? Quidem placeat fugit cum!</p>
+        </div>
 
+        <section class="haircuts">
+            <div class="haircut">
+                <img src="assets/img/corte1.png" alt="Corte Normal">
+                <div class="haircut-info">
+                    <strong>Corte Normal</strong>
+                    <button>R$ 45,00</button>
+                </div>
+            </div>
 
+            <div class="haircut">
+                <img src="assets/img/corte2.png" alt="Barva Completa">
+                <div class="haircut-info">
+                    <strong>Barba Completa</strong>
+                    <button>R$ 35,00</button>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/img/corte3.png" alt="Corte e Barba">
+                <div class="haircut-info">
+                    <strong>Corte e Barba</strong>
+                    <button>R$ 85,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="services">
+        <h2>Venha Conhecer</h2>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0532962759603!2d-35.87175102412037!3d-7.234761571055176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aeaf5bb9c3fac9%3A0x9bf91177d59322f7!2sPartage%20Shopping%20Campina%20Grande!5e0!3m2!1spt-BR!2sbr!4v1698439494224!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+
+            <a href="#" target="_blank"><i class="fa-brands fa-x fa-2x"></i></a>
+        </div>
+
+        <div>
+            <img src="assets/img/logo.svg" alt="Logo Barbearia">
+        </div>
+
+        <p>copyright © 2023 | CodeByArcanjo - todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=5583900000000&text=Quero%20fazer%20um%20agendamento!&type=phone_number&app_absent=0" class="bnt-whatsapp" target="_blank"><img src="assets/img/whatssapp.svg" alt="Botão WhatsApp"><span class="tooltip-text">Agende seu horário</span></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/js/script.js"></script>
     <script src="https://kit.fontawesome.com/a9b5462599.js" crossorigin="anonymous"></script>
-    <script type="module" src="assets/src/js/main.js"></script>
 </body>
 </html>
